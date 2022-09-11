@@ -28,6 +28,8 @@ def createrandomlist(minWt, capWt, capVal, totalItems):
     return randomlist
 
 def createdict(newdict):
+    #repeated code put into separate function
+    #creates a dictionary with increasing keys (starting from 1)
     realdict = {}
     itemnum = 1
     for item in newdict.values():
@@ -36,6 +38,7 @@ def createdict(newdict):
     return realdict
 
 def printlist2(randomlist, numrows):
+    #prints out a nicely formatted page of key, value pairs from dictionary
     print("Format is: [Item] : (Weight, Value)")
     x = len(randomlist)
     y = 0
